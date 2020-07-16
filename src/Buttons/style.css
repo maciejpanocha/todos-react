@@ -1,0 +1,30 @@
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-gap: 20px;
+    border-bottom: 1px solid gray;
+}
+
+
+.buttons__button {
+    color: hsl(180, 100%, 25%);
+    background: none;
+    border: none;
+}
+
+.buttons__button:hover {
+   color: hsl(180, 100%, 30%);;
+}
+
+.buttons__button:active {
+    outline: none;
+}
+
+.buttons__button--hidden {
+    display: none;
+}
+
+.buttons__button--disabled {
+    pointer-events: none;
+    color: #ccc;
+}
